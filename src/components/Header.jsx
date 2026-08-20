@@ -21,12 +21,17 @@ export default function Header() {
     <header className={`site-header${open ? ' open' : ''}`}>
       <div className="header-inner">
         <Link to="/" className="brand" onClick={() => setOpen(false)}>
-          <span className="brand-mark">JSPS</span>
-          <span className="brand-text">
-            JSPS Engineering & Solutions
-            <br />
-            <small>PTE. LTD.</small>
-          </span>
+          <img src="/logo.png" alt="JSPS Engineering & Solutions logo" className="brand-mark" />
+
+          <div className="brand-text">
+            <div className="title">
+              JSPS Engineering &
+            </div>
+            <div className="sub-title">
+              SOLUTIONS PTE LTD
+            </div>
+          </div>
+
         </Link>
 
         <nav>
@@ -48,7 +53,7 @@ export default function Header() {
 
         <div className="nav-cta">
           <a href="tel:+6590625329" className="nav-phone">
-            <Phone size={16} strokeWidth={2.25} /> +65 90625329
+            <Phone size={16} strokeWidth={2.25} /> <div className="nav-phone-text">+65 90625329</div>
           </a>
           <Link to="/contact" className="btn btn-outline-dark">Get a Quote</Link>
         </div>

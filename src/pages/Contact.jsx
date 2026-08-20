@@ -135,14 +135,10 @@ export default function Contact() {
             <span className="section-tag">Find Us</span>
             <h2>Our Location</h2>
           </div>
-          {/*
-            TODO: Replace the query below with your real address, e.g.
-            https://maps.google.com/maps?q=YOUR+ADDRESS+SINGAPORE&output=embed
-          */}
           <iframe
             className="map-placeholder"
             style={{ width: '100%', border: 0, borderRadius: 10 }}
-            src="https://maps.google.com/maps?q=Singapore&t=&z=12&ie=UTF8&iwloc=&output=embed"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.738479324494!2d103.69517402554847!3d1.333063311628362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da0fb2bb8d0641%3A0x163c81d1d6d91981!2sPioneer%20Centre!5e0!3m2!1sen!2ssg!4v1787215196608!5m2!1sen!2ssg"
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"

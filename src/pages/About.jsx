@@ -48,7 +48,7 @@ export default function About() {
               commitment to getting the technical detail right the first time.
             </p>
           </div>
-          <PlaceholderImg label="Company / facility photo" style={{ minHeight: 300 }} />
+          <img src='/about_us.jpg' style={{ minHeight: 100, borderRadius: 8 }} />
         </div>
       </section>
 
@@ -72,7 +72,7 @@ export default function About() {
       </section>
 
       {/* ===== CERTIFICATIONS ===== */}
-      <section className="section-alt">
+      {/* <section className="section-alt">
         <div className="container">
           <div className="section-head center">
             <span className="section-tag">Accreditations</span>
@@ -86,9 +86,8 @@ export default function About() {
               </div>
             ))}
           </div>
-          {/* TODO: Replace with real certification logos/names, or remove this section if not applicable */}
-        </div>
-      </section>
+        </div >
+      </section > */}
 
       {/* ===== TEAM (placeholder) ===== */}
       <section className="section-alt">
@@ -105,7 +104,7 @@ export default function About() {
                   style={{ minHeight: 160, borderRadius: '50%', width: 160, margin: '0 auto 18px' }}
                 />
                 <h4>{member.name}</h4>
-                <p style={{ color: 'var(--color-teal)', fontWeight: 600, marginBottom: 8 }}>{member.title}</p>
+                <p style={{ color: 'var(--color-green)', fontWeight: 600, marginBottom: 8 }}>{member.title}</p>
                 <p>{member.bio}</p>
               </div>
             ))}

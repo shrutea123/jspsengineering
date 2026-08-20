@@ -1,6 +1,6 @@
 /* =========================================================
    JSPS Engineering & Solutions Pte. Ltd. — Site Stylesheet
-   Palette: Navy (trust/industrial) + Teal (process/chemical) + Amber (CTA)
+   Palette: Navy (trust/industrial) + Green (logo accent) + Cyan (logo CTA)
    ========================================================= */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap');
@@ -8,10 +8,10 @@
 :root {
   --color-navy: #0A2A43;
   --color-navy-dark: #071D30;
-  --color-teal: #0F8B8D;
-  --color-teal-light: #14ADA6;
-  --color-amber: #F2994A;
-  --color-amber-dark: #DB7F2E;
+  --color-green: #008242;
+  --color-green-light: #4CAF50;
+  --color-cyan: #00BBD7;
+  --color-cyan-dark: #0092A8;
   --color-bg: #F7F9FB;
   --color-bg-alt: #EEF3F6;
   --color-text: #1B2B3A;
@@ -82,12 +82,12 @@ p {
 }
 
 a {
-  color: var(--color-teal);
+  color: var(--color-green);
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--color-teal-light);
+  color: var(--color-text-light);
 }
 
 img {
@@ -119,8 +119,8 @@ section {
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--color-teal);
-  background: rgba(15, 139, 141, 0.1);
+  color: var(--color-green);
+  background: rgba(0, 130, 66, 0.1);
   padding: 6px 14px;
   border-radius: 999px;
   margin-bottom: 14px;
@@ -153,13 +153,13 @@ section {
 }
 
 .btn-primary {
-  background: var(--color-amber);
-  color: var(--color-navy-dark);
+  background: var(--color-cyan);
+  color: var(--color-white);
 }
 
 .btn-primary:hover {
-  background: var(--color-amber-dark);
-  color: var(--color-navy-dark);
+  background: var(--color-cyan-dark);
+  color: var(--color-white);
 }
 
 .btn-outline {
@@ -175,12 +175,12 @@ section {
 
 .btn-outline-dark {
   background: transparent;
-  border-color: var(--color-navy);
-  color: var(--color-navy);
+  border-color: var(--color-green);
+  color: var(--color-green);
 }
 
 .btn-outline-dark:hover {
-  background: var(--color-navy);
+  background: var(--color-green);
   color: var(--color-white);
 }
 
@@ -220,23 +220,28 @@ section {
 .brand-mark {
   width: 42px;
   height: 42px;
-  border-radius: 8px;
-  background: linear-gradient(135deg, var(--color-navy), var(--color-teal));
-  color: var(--color-white);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 800;
-  font-size: 1rem;
+  object-fit: contain;
   flex-shrink: 0;
 }
 
-.brand-text small {
-  display: block;
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.brand-text .title {
+  line-height: 1.1;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--color-green);
+}
+
+.brand-text .sub-title {
   font-size: 0.68rem;
-  font-weight: 500;
-  color: var(--color-text-light);
-  letter-spacing: 0.03em;
+  font-weight: 100;
+  color: var(--color-cyan);
+  letter-spacing: 0.4em;
 }
 
 .nav-tabs {
@@ -263,8 +268,8 @@ section {
 }
 
 .nav-tabs a.active {
-  color: var(--color-teal);
-  border-bottom-color: var(--color-teal);
+  color: var(--color-green);
+  border-bottom-color: var(--color-green);
 }
 
 .nav-cta {
@@ -303,6 +308,7 @@ section {
 /* ---------- Hero ---------- */
 .hero {
   background:
+    linear-gradient(100deg, rgba(8, 24, 32, 0.78) 0%, rgba(8, 24, 32, 0.45) 55%, rgba(8, 24, 32, 0.2) 100%),
     url('/plant_banner.jpeg') center center / cover no-repeat;
   color: var(--color-white);
   padding: 100px 0 90px;
@@ -318,7 +324,7 @@ section {
   width: 420px;
   height: 420px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(15, 139, 141, 0.35), transparent 70%);
+  background: radial-gradient(circle, rgba(0, 130, 66, 0.35), transparent 70%);
 }
 
 .hero-inner {
@@ -396,7 +402,7 @@ section {
   font-family: var(--font-heading);
   font-size: 2rem;
   font-weight: 700;
-  color: var(--color-teal);
+  color: var(--color-green);
 }
 
 .stat .label {
@@ -439,8 +445,8 @@ section {
   width: 52px;
   height: 52px;
   border-radius: 10px;
-  background: rgba(15, 139, 141, 0.1);
-  color: var(--color-teal);
+  background: rgba(0, 130, 66, 0.1);
+  color: var(--color-green);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -514,14 +520,14 @@ section {
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  background: var(--color-teal);
+  background: var(--color-green);
   border: 3px solid var(--color-white);
-  box-shadow: 0 0 0 2px var(--color-teal);
+  box-shadow: 0 0 0 2px var(--color-green);
 }
 
 .timeline-item .year {
   font-weight: 700;
-  color: var(--color-teal);
+  color: var(--color-green);
   font-size: 0.85rem;
 }
 
@@ -562,8 +568,8 @@ section {
 
 .filter-tag.active,
 .filter-tag:hover {
-  background: var(--color-teal);
-  border-color: var(--color-teal);
+  background: var(--color-green);
+  border-color: var(--color-green);
   color: var(--color-white);
 }
 
@@ -588,8 +594,8 @@ section {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  color: var(--color-teal);
-  background: rgba(15, 139, 141, 0.1);
+  color: var(--color-green);
+  background: rgba(0, 130, 66, 0.1);
   padding: 4px 10px;
   border-radius: 999px;
   margin-bottom: 10px;
@@ -638,7 +644,7 @@ section {
 
 /* CTA band */
 .cta-band {
-  background: linear-gradient(120deg, var(--color-teal), var(--color-navy));
+  background: linear-gradient(120deg, var(--color-green), var(--color-navy));
   color: var(--color-white);
   border-radius: var(--radius);
   padding: 48px;
@@ -761,7 +767,7 @@ input:focus,
 select:focus,
 textarea:focus {
   outline: none;
-  border-color: var(--color-teal);
+  border-color: var(--color-green);
   background: var(--color-white);
 }
 
@@ -818,7 +824,7 @@ textarea {
 
 .footer-grid li svg {
   flex-shrink: 0;
-  color: var(--color-teal-light);
+  color: var(--color-green-light);
 }
 
 .footer-grid a {
