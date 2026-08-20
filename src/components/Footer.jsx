@@ -37,15 +37,14 @@ export default function Footer() {
           <div>
             <h4>Contact</h4>
             <ul>
-              <li><Phone size={15} strokeWidth={2.25} /> <a href="tel:+6590625329">9062 5329</a></li>
+              <li><Phone size={15} strokeWidth={2.25} /> <a href="tel:+6590625329">+65 90625329</a></li>
               <li><Mail size={15} strokeWidth={2.25} /> <a href="mailto:selvan@jspsengineering.com">selvan@jspsengineering.com</a></li>
-              <li><MapPin size={15} strokeWidth={2.25} /> [Insert office address, Singapore]</li>
+              <li><MapPin size={15} strokeWidth={2.25} /> <a href="https://goo.gl/maps/1SoonLeeStreet" target="_blank" rel="noopener noreferrer">1 Soon Lee Street, #06-01, Pioneer Centre, Singapore 627605</a></li>
             </ul>
           </div>
         </div>
         <div className="footer-bottom">
           <div>© {year} JSPS Engineering & Solutions Pte. Ltd. All rights reserved.</div>
-          <div>UEN: [Insert UEN Number]</div>
         </div>
       </div>
     </footer>

@@ -50,7 +50,7 @@ export default function Contact() {
               <div className="icon-box"><MapPin size={22} strokeWidth={1.75} /></div>
               <div>
                 <strong>Office Address</strong>
-                <span>[Insert office address, Singapore]</span>
+                <span>1 Soon Lee Street, #06-01, Pioneer Centre, Singapore 627605</span>
               </div>
             </div>
 
@@ -58,7 +58,10 @@ export default function Contact() {
               <div className="icon-box"><Clock size={22} strokeWidth={1.75} /></div>
               <div>
                 <strong>Operating Hours</strong>
-                <span>Mon–Fri, 9:00 AM – 6:30 PM</span>
+                <div className="contact-hours">
+                  <span>Mon–Fri, 8:30 AM – 5:30 PM</span>
+                  <span>Sat, 8:30 AM – 12:30 PM</span>
+                </div>
               </div>
             </div>
           </div>

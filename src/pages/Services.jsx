@@ -1,5 +1,4 @@
 import PageHero from '../components/PageHero'
-import PlaceholderImg from '../components/PlaceholderImg'
 import { Link } from 'react-router-dom'
 import { FlaskConical, Waypoints, Sparkles, Droplets, Gauge } from 'lucide-react'
 
@@ -13,7 +12,7 @@ const SERVICES = [
     title: 'Industrial Chemical Cleaning',
     desc: 'Specialized chemical cleaning for industrial plant equipment, restoring cleanliness and reliability ahead of start-up, turnaround or maintenance.',
     bullets: ['Steam Boilers', 'Furnaces', 'Heat Exchangers', 'Condensers & Coolers', 'Tanks & Vessels', 'Process Equipment'],
-    img: 'Chemical cleaning of plant equipment',
+    img: '/chemical_cleaning.jpg',
   },
   {
     id: 'pipeline-cleaning',
@@ -21,7 +20,7 @@ const SERVICES = [
     title: 'Industrial Pipelines',
     desc: 'Pipeline cleaning services across a wide range of gas, process, utility and chemical pipeline systems.',
     bullets: ['Oxygen Pipelines', 'Nitrogen Pipelines', 'Hydrogen Gas Pipelines', 'Process & Utility Pipelines', 'Fuel & Chemical Pipelines'],
-    img: 'Pipeline cleaning in progress',
+    img: '/pipeline_cleaning.jpg',
   },
   {
     id: 'pickling-passivation',
@@ -29,7 +28,7 @@ const SERVICES = [
     title: 'Pickling & Passivation',
     desc: 'Removal of weld heat tint, oxides and surface contamination to restore the corrosion resistance of stainless steel and fabricated components.',
     bullets: ['Stainless Steel Pipes', 'Stainless Steel Spools', 'Tanks & Vessels', 'Fabricated Components', 'Process Equipment', 'Removal of Weld Heat Tint, Oxides & Surface Contamination'],
-    img: 'Pickling & passivation of stainless steel',
+    img: 'pickling_passivation.jpg',
   },
   {
     id: 'mechanical-cleaning',
@@ -37,7 +36,7 @@ const SERVICES = [
     title: 'Mechanical Cleaning',
     desc: 'Mechanical cleaning methods matched to the equipment, contamination type and access constraints of your system.',
     bullets: ['High Pressure Hydro-Jetting', 'Ultra High Pressure Water Jetting', 'Poly-Pig Cleaning', 'Dry-Ice Blasting', 'Manual Mechanical Cleaning'],
-    img: 'High-pressure hydro-jetting equipment',
+    img: '/poly_pig.jpg',
   },
   {
     id: 'testing-purging',
@@ -45,7 +44,7 @@ const SERVICES = [
     title: 'Testing & Purging',
     desc: 'Testing and purging services to confirm system integrity and prepare pipelines and equipment for safe operation.',
     bullets: ['Hydrostatic Testing', 'Pressure Testing', 'Nitrogen Purging', 'Nitrogen Drying', 'Inerting Services'],
-    img: 'Hydrostatic testing / nitrogen purging',
+    img: '/testing.jpg',
   },
 ]
 
@@ -68,13 +67,13 @@ export default function Services() {
           <div className="container grid grid-2" style={{ alignItems: 'center' }}>
             {i % 2 === 1 ? (
               <>
-                <PlaceholderImg label={s.img} style={{ minHeight: 260 }} />
+                <img src={s.img} style={{ height: 300, borderRadius: 8 }} />
                 <ServiceCopy s={s} />
               </>
             ) : (
               <>
                 <ServiceCopy s={s} />
-                <PlaceholderImg label={s.img} style={{ minHeight: 260 }} />
+                <img src={s.img} style={{ height: 300, borderRadius: 8 }} />
               </>
             )}
           </div>

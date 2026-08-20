@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import PlaceholderImg from '../components/PlaceholderImg'
 import { FlaskConical, Waypoints, Sparkles, Droplets, Gauge, Target, ShieldCheck, BadgeCheck, Workflow, Puzzle } from 'lucide-react'
 
 const SERVICES = [
@@ -43,7 +42,6 @@ const INDUSTRIES = [
   'Petrochemical',
   'Chemical & Process Industries',
   'Power Generation',
-  'Marine & Offshore',
   'Pharmaceutical',
   'Food & Beverage',
   'Semiconductor',
@@ -57,7 +55,7 @@ export default function Home() {
       {/* ===== HERO ===== */}
       <section className="hero">
         <div className="container hero-inner">
-          <h1>Industrial Chemical Cleaning & Mechanical Cleaning Specialists</h1>
+          <h1>Industrial Chemical Cleaning Specialists</h1>
           <p className="lead">
             Professional cleaning solutions for industrial plants, equipment and process systems.
           </p>
@@ -76,7 +74,7 @@ export default function Home() {
             <h2>Safe, Technically Controlled & Cost-Effective Cleaning</h2>
             <p>
               JSPS Engineering & Solutions Pte. Ltd. provides specialized industrial
-              chemical cleaning, mechanical cleaning, pickling & passivation,
+              chemical cleaning, pickling & passivation, mechanical cleaning,
               hydro-testing and nitrogen purging services for industrial plants,
               process equipment, pipelines, tanks and vessels.
             </p>
@@ -87,7 +85,11 @@ export default function Home() {
             </p>
             <Link to="/about" className="btn btn-outline-dark">More About Us</Link>
           </div>
-          <PlaceholderImg label="Photo of plant / cleaning crew / equipment" style={{ minHeight: 320 }} />
+          <img src="/who_we_are_img.jpg" alt="Photo of plant / cleaning crew / equipment" style={{
+            height: 400,
+            borderRadius: 8,
+
+          }} />
         </div>
       </section>
 
@@ -167,7 +169,7 @@ export default function Home() {
         <div className="container">
           <div className="cta-band">
             <div>
-              <h3>Need Industrial Cleaning?</h3>
+              <h3>Need Industrial Chemical Cleaning?</h3>
               <p>Talk to our technical team about your equipment or cleaning requirements.</p>
             </div>
             <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap' }}>
