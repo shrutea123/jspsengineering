@@ -9,7 +9,7 @@
       // This script redirects a 404 (from a deep link / refresh) to the
       // root index.html, encoding the intended path in the query string
       // so index.html's script can restore it via history.replaceState.
-      var pathSegmentsToKeep = 1; // keep "/jspsengineering"
+      var pathSegmentsToKeep = 0; // custom domain serves from root, no repo subpath to keep
 
       var l = window.location;
       l.replace(
